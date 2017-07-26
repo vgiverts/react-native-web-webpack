@@ -22,11 +22,14 @@ export default class ViewClientPage extends Component {
          };
 
     render() {
-
+        const { params } = this.props.navigation.state;
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
                   This is a single client
+                </Text>
+                <Text style={styles.welcome}>
+                  Here are my argument: {params.myParam}
                 </Text>
               </View>
         );

@@ -39,7 +39,7 @@ export default class ListClientsPage extends Component {
                   Double tap R on your keyboard to reload,{'\n'}
                   Shake or press menu button for dev menu
                 </Text>
-                <Button onPress={() => {navigate('ViewClient')}} title="View a client"/>
+                <Button onPress={() => {navigate('ViewClient', {myParam: 'foobar'})}} title="View a client"/>
               </View>
         );
     }
